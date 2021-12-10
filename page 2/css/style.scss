@@ -1,0 +1,500 @@
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.all-container {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgb(59, 59, 59);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.info-container {
+  display: flex;
+  margin-top: 1rem;
+}
+.hamburger {
+  display: none;
+}
+.info ul {
+  display: flex;
+  margin-top: 0.5rem;
+  li {
+    margin-right: 2rem;
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    a:active {
+      font-weight: 700;
+      color: #87ef29;
+    }
+  }
+}
+.sign-in {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+.sign-up {
+  padding: 12px 40px;
+  background-color: #02acab;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.hero {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  background-color: rgba(6.7, 69.4, 69, 0.05);
+  padding: 3rem 4rem 10rem 4rem;
+  .hero-bg {
+    width: 100%;
+    position: relative;
+    display: none;
+  }
+  .hero-container {
+    //position: absolute;
+    top: 2rem;
+    left: 5%;
+    .defi {
+      width: 200px;
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 3.5rem;
+    }
+    h3 {
+      font-weight: 400;
+      color: #02acab;
+      margin-bottom: 0;
+      margin-right: 0.5rem;
+    }
+    .links {
+      display: flex;
+    }
+    .invest {
+      display: flex;
+      margin-right: 4rem;
+    }
+    .view {
+      display: flex;
+    }
+    img {
+      width: 8px;
+    }
+  }
+}
+.main-section {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  .main-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .stat-section {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgb(59, 59, 59);
+    margin-top: -6rem;
+    .stat-container {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      padding: 30px 60px;
+      h1 {
+        font-weight: 500;
+        font-size: 4rem;
+        margin: 0;
+      }
+      p {
+        font-size: 0.8rem;
+        margin: 0;
+      }
+    }
+  }
+  .tabs-section {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    .tab-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .tabs-radio {
+        display: none;
+      }
+      .tabs-label {
+        padding: 10px 30px;
+      }
+      .tabs-radio:checked + .tabs-label {
+        border-bottom: 5px solid #000;
+      }
+    }
+  }
+  .min-investment {
+    margin-bottom: 4rem;
+  }
+  .fund-des {
+    margin-bottom: 2rem;
+  }
+  .table {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 3rem;
+    .table-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    p {
+      margin-top: 1rem;
+    }
+    .left-column {
+      width: 49%;
+    }
+    .right-column {
+      width: 49%;
+    }
+    .uni {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        margin-right: 1.3rem;
+      }
+    }
+    .mkr {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        margin-right: 1.1rem;
+      }
+    }
+    .aave {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        margin-right: 0.7rem;
+      }
+    }
+    .amp {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        margin-right: 1.2rem;
+      }
+    }
+    .crv {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        margin-right: 1.2rem;
+      }
+    }
+    .dydx {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        width: 49px;
+        margin-right: 1.3rem;
+      }
+    }
+    .bal {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        width: 48px;
+        margin-right: 2.2rem;
+      }
+    }
+    .comp {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        width: 49px;
+        margin-right: 1rem;
+      }
+    }
+    .sushi {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        margin-right: 1.4rem;
+      }
+    }
+    .snx {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 10px 30px;
+      margin-bottom: 1rem;
+      img {
+        margin-right: 2.2rem;
+      }
+    }
+    .logo-abb {
+      display: flex;
+      img {
+        max-width: 50px;
+      }
+    }
+  }
+  .graph {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 4rem;
+    img {
+      width: 100%;
+    }
+  }
+  .calendar {
+    width: 100%;
+    background-color: rgba(0, 13.7, 20, 0.05);
+    height: 120px;
+    margin-bottom: 4rem;
+    .dates-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 30px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .stmnt {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+  }
+  .statements-container hr {
+    margin-bottom: 2rem;
+  }
+}
+.features-section {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #002333;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  .f-background {
+    width: 100%;
+    display: none;
+  }
+  .features-container {
+    // position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem;
+    top: 0;
+    color: #fff;
+    .left-side {
+      width: 50%;
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1rem;
+        width: 85%;
+      }
+    }
+    .right-side {
+      display: flex;
+      margin-top: 250px;
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(6.7, 69.4, 69, 0.05);
+  margin-top: 4rem;
+  .footer-container {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 7rem 0;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  li {
+    list-style-type: none;
+  }
+  h3 {
+    margin-top: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .cryptheg img {
+    margin-bottom: 1rem;
+  }
+  .cryptheg ul {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .info-container {
+    display: none;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .hamburger {
+    display: block;
+    img {
+      width: 40px;
+      margin-top: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo img {
+    width: 100px;
+  }
+  .hamburger {
+    display: block;
+    img {
+      width: 20px;
+      margin-top: 0.5rem;
+    }
+  }
+  .hero {
+    padding-left: 1.5rem;
+    .hero-container {
+      .defi {
+        width: 150px;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      .links {
+        h3 {
+          font-size: 0.8rem;
+        }
+        img {
+          width: 7px;
+        }
+        .invest {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+  .stat-container {
+    flex-wrap: wrap;
+    .assets {
+      margin-bottom: 2rem;
+    }
+    .investors {
+      margin-bottom: 2rem;
+    }
+    .yoy {
+      margin-bottom: 2rem;
+    }
+  }
+  .main-section {
+    .tabs-section {
+      .tab-container {
+        display: none;
+      }
+    }
+    .table {
+      .table-container {
+        flex-wrap: wrap;
+      }
+      .left-column {
+        width: 100%;
+      }
+      .right-column {
+        width: 100%;
+      }
+    }
+    .stmnt {
+      margin: 0.5rem 1rem;
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    .calendar {
+      .dates-container p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .features-section {
+    .features-container {
+      margin: 2rem;
+      flex-wrap: wrap;
+      .left-side {
+        width: 100%;
+      }
+      .right-side {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
