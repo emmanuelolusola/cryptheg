@@ -134,7 +134,7 @@ body {
     .tab-container {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       .tabs-radio {
         display: none;
       }
@@ -459,7 +459,8 @@ body {
   .main-section {
     .tabs-section {
       .tab-container {
-        display: none;
+        // display: none;
+        overflow-x: auto;
       }
     }
     .table {

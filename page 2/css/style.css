@@ -191,8 +191,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-section .tabs-section .tab-container .tabs-radio {
@@ -633,7 +634,7 @@ body {
     margin-bottom: 2rem;
   }
   .main-section .tabs-section .tab-container {
-    display: none;
+    overflow-x: auto;
   }
   .main-section .table .table-container {
     -ms-flex-wrap: wrap;
